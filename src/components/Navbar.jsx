@@ -1,5 +1,5 @@
 "use client";
-import { Navbar, Button, Dropdown } from "keep-react";
+import { Navbar,  Dropdown } from "keep-react";
 import { logo } from "../images/constant.js";
 
 export const NavbarComponent = () => {
@@ -14,42 +14,35 @@ export const NavbarComponent = () => {
                 alt="logo"
                 width="40"
                 height="40"
-                className="rounded-full items-center "
+                className="rounded-full items-center font-serif "
               />
-              <span className="ml-2">Protut</span>
+              <span className="ml-2 text-[18px]">Shivam Sharma</span>
             </div>
           </Navbar.Brand>
           <Navbar.Divider></Navbar.Divider>
           <Navbar.Container
             tag="ul"
-            className="lg:flex hidden items-center justify-between gap-8"
+            className="lg:flex hidden items-center justify-center gap-8 "
           >
-            <Navbar.Link linkName="Home" />
-            <Navbar.Link linkName="About" />
+            <Navbar.Link className="hover:underline font-size: 1rem" linkName="Home" href="/" />
+            <Navbar.Link className="hover:underline" linkName="Blog's" href="https://shivam-sharma.hashnode.dev/"  />
             <Dropdown
-              action="Products"
-              actionClassName="border-none text-[14px] text-metal-500"
+              action="Projects"
+              actionClassName="border-none hover:underline text-[14px]  text-metal-500"
             >
               <Dropdown.List>
-                <Dropdown.Item>Product 1</Dropdown.Item>
-                <Dropdown.Item>Product 2</Dropdown.Item>
-                <Dropdown.Item>Product 3</Dropdown.Item>
-                <Dropdown.Item>Product 4</Dropdown.Item>
+                <Dropdown.Item href="https://hotel-booking-app-rnfq.onrender.com/">Hotel Booking Service</Dropdown.Item>
+                <Dropdown.Item href="https://tiddly-url.onrender.com/">Tiddly URL</Dropdown.Item>
               </Dropdown.List>
             </Dropdown>
           </Navbar.Container>
         </Navbar.Container>
         <Navbar.Collapse collapseType="sidebar">
             <Navbar.Container tag="ul" className="flex flex-col gap-5">
-            <Navbar.Link linkName="Home" />
-            <Navbar.Link linkName="About" />
+            <Navbar.Link linkName="Home" href="/" />
+            <Navbar.Link linkName="Blog's"  href="https://shivam-sharma.hashnode.dev/" />
             </Navbar.Container>
           </Navbar.Collapse>
-
-        <Navbar.Container className="flex gap-2">
-          <Button size="sm">Login</Button>
-          <Button size="sm">Sign Up</Button> 
-        </Navbar.Container>
         <Navbar.Toggle />
       </Navbar.Container>
     </Navbar>
