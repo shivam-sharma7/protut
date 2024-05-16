@@ -2,6 +2,16 @@ import logo from "./1.png";
 import profile from "./1.png";
 import twitter from "./twitter.svg";
 import linkedin from "./linkedin.svg";
+import github from "./github.svg";
+import javascript from "./javascript.svg";
+import typescript from "./typescript.svg";
+import react from "./react.svg";
+import nodejs from "./node-js.svg";
+import postgresql from "./postgresql.svg";
+import express from "./express-js.svg";
+import git from './git.svg'
+import docker from './docker.svg'
+
 
 const footerLinks = [
   {
@@ -50,6 +60,48 @@ export const socialMedia = [
     alt: "linkedin logo",
     href: "https://linkedin.com/in/meshivamsharma",
   },
+  {
+    src: github,
+    alt: "github logo",
+    href: "https://github.com/shivam-sharma7"
+  },
 ];
 
-export { logo, profile, footerLinks };
+export const skills = [
+   {
+    src: javascript,
+    alt: "javascript logo",
+   },
+    {
+      src: typescript,
+      alt: "typescript logo",
+    },
+    {
+      src: react,
+      alt: "react logo",
+    },
+    {
+      src: nodejs,
+      alt: "nodejs logo",
+    },
+    {
+      src: express,
+      alt: "express logo",
+    },
+    {
+      src: git,
+      alt: "git logo",
+    },
+    {
+      src: postgresql,
+      alt: "postgresql logo",
+    },
+    {
+      src: docker,
+      alt: "docker logo",
+    },
+     
+];
+
+ 
+export { logo, profile, footerLinks,  };
